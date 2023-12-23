@@ -31,4 +31,18 @@ public class TestServiceApplication {
 		return "TEST-SERVICE";
 	}
 
+	@GetMapping(path="/public")
+	public String publicApi(){
+		return "This is an PUBLIC API";
+	}
+
+	@GetMapping(path="/user")
+	public String userApi(){
+		return "This is an USER API";
+	}
+	@GetMapping(path="/admin")
+	public String adminApi(){
+		return "This is an ADMIN API";
+	}
+
 }
